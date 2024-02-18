@@ -13,7 +13,7 @@
         android:theme="@style/Theme.HencoderPratice"
         tools:targetApi="31">
         <activity
-            android:name="com.hencoder.praticedraw4.MainActivity"
+            android:name="com.hencoder.praticedraw5.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.HencoderPratice">
