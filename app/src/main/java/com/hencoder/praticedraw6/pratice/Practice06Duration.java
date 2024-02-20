@@ -31,6 +31,7 @@ public class Practice06Duration extends LinearLayout {
         super(context, attrs, defStyleAttr);
     }
 
+    boolean translate = false;
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
@@ -58,12 +59,17 @@ public class Practice06Duration extends LinearLayout {
             }
         });
 
-        animateBt = (Button) findViewById(R.id.animateBt);
-        imageView = (ImageView) findViewById(R.id.imageView);
-        animateBt.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // TODO 在这里处理点击事件，执行动画。记得使用 `setDuration(duration)` 来设置动画的时长。
+        animateBt = findViewById(R.id.animateBt);
+        imageView = findViewById(R.id.imageView);
+        animateBt.setOnClickListener(v -> {
+            if (translate) {
+                //向左移动回原点
+                imageView.animate().translationX(0).setDuration(duration);
+                translate = false;
+            } else {
+                //向右移动到 x 为 200 的位置
+                imageView.animate().translationX(200).setDuration(duration);
+                translate = true;
             }
         });
     }

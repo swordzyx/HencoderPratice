@@ -27,6 +27,7 @@ public class Practice03Scale extends RelativeLayout {
         super(context, attrs, defStyleAttr);
     }
 
+    int scaleState = 0;
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
@@ -38,6 +39,30 @@ public class Practice03Scale extends RelativeLayout {
             @Override
             public void onClick(final View v) {
                 // TODO 在这里处理点击事件，通过 View.animate().scaleX/Y() 来让 View 放缩
+                switch (scaleState) {
+                    case 0:
+                        //todo: 横向拉伸到原来的 1.5 倍
+                        imageView.animate().scaleX(1.5f);
+                        break;
+                    case 1:
+                        //todo: 水平拉伸到原来的 1 倍
+                        imageView.animate().scaleX(1f);
+                        break;
+                    case 2:
+                        //todo: 垂直拉伸到原来的 0.5 倍
+                        imageView.animate().scaleY(0.5f);
+                        break;
+                    case 3:
+                        //todo: 垂直拉伸到原来的 1 倍
+                        imageView.animate().scaleY(1f);
+                        break;
+                    default:
+                        break;
+            }
+                scaleState++;
+                if (scaleState == 4) {
+                    scaleState = 0;
+                }
             }
         });
     }
