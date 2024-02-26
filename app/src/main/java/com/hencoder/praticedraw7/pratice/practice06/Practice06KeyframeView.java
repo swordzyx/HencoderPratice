@@ -1,6 +1,4 @@
-package com.hencoder.praticedraw6.sample.sample08;
-
-import static com.hencoder.Utils.dpToPixel;
+package com.hencoder.praticedraw7.pratice.practice06;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -13,29 +11,31 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.hencoder.Utils;
 
-public class Sample08ObjectAnimatorView extends View {
-    final float radius = dpToPixel(80);
+
+public class Practice06KeyframeView extends View {
+    final float radius = Utils.dpToPixel(80);
 
     float progress = 0;
     RectF arcRectF = new RectF();
 
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-    public Sample08ObjectAnimatorView(Context context) {
+    public Practice06KeyframeView(Context context) {
         super(context);
     }
 
-    public Sample08ObjectAnimatorView(Context context, @Nullable AttributeSet attrs) {
+    public Practice06KeyframeView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public Sample08ObjectAnimatorView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public Practice06KeyframeView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
     {
-        paint.setTextSize(dpToPixel(40));
+        paint.setTextSize(Utils.dpToPixel(40));
         paint.setTextAlign(Paint.Align.CENTER);
     }
 
@@ -58,7 +58,7 @@ public class Sample08ObjectAnimatorView extends View {
         paint.setColor(Color.parseColor("#E91E63"));
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeCap(Paint.Cap.ROUND);
-        paint.setStrokeWidth(dpToPixel(15));
+        paint.setStrokeWidth(Utils.dpToPixel(15));
         arcRectF.set(centerX - radius, centerY - radius, centerX + radius, centerY + radius);
         canvas.drawArc(arcRectF, 135, progress * 2.7f, false, paint);
 

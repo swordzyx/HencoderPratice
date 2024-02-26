@@ -1,6 +1,6 @@
 package com.hencoder.praticedraw6.pratice.practice08;
 
-import static com.hencoder.praticedraw6.Utils.dpToPixel;
+import static com.hencoder.Utils.dpToPixel;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -10,6 +10,7 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 
@@ -49,11 +50,11 @@ public class Practice08ObjectAnimatorView extends View {
     }
 
     @Override
-    public void onDraw(Canvas canvas) {
+    public void onDraw(@NonNull Canvas canvas) {
         super.onDraw(canvas);
 
-        float centerX = getWidth() / 2;
-        float centerY = getHeight() / 2;
+        float centerX = getWidth() / 2f;
+        float centerY = getHeight() / 2f;
 
         paint.setColor(Color.parseColor("#E91E63"));
         paint.setStyle(Paint.Style.STROKE);

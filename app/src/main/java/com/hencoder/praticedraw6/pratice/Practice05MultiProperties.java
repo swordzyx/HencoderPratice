@@ -2,15 +2,14 @@ package com.hencoder.praticedraw6.pratice;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.annotation.Nullable;
 
+import com.hencoder.Utils;
 import com.hencoder.hencoderpratice.R;
-import com.hencoder.praticedraw6.Utils;
 
 public class Practice05MultiProperties extends ConstraintLayout {
   Button animateBt;

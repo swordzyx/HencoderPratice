@@ -25,8 +25,8 @@ import androidx.interpolator.view.animation.FastOutLinearInInterpolator;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 import androidx.interpolator.view.animation.LinearOutSlowInInterpolator;
 
+import com.hencoder.Utils;
 import com.hencoder.hencoderpratice.R;
-import com.hencoder.praticedraw6.Utils;
 
 public class Sample07Interpolator extends LinearLayout {
     Spinner spinner;

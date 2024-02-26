@@ -1,4 +1,4 @@
-package com.hencoder.praticedraw6;
+package com.hencoder;
 
 import android.content.res.Resources;
 import android.util.DisplayMetrics;

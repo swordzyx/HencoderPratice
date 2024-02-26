@@ -1,6 +1,6 @@
 package com.hencoder.praticedraw6.pratice;
 
-import static com.hencoder.praticedraw6.Utils.dpToPixel;
+import static com.hencoder.Utils.dpToPixel;
 
 import android.content.Context;
 import android.graphics.Canvas;

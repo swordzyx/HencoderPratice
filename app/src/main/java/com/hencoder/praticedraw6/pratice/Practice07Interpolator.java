@@ -22,13 +22,12 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 import androidx.annotation.Nullable;
-import androidx.core.view.animation.PathInterpolatorCompat;
 import androidx.interpolator.view.animation.FastOutLinearInInterpolator;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 import androidx.interpolator.view.animation.LinearOutSlowInInterpolator;
 
+import com.hencoder.Utils;
 import com.hencoder.hencoderpratice.R;
-import com.hencoder.praticedraw6.Utils;
 
 
 /**

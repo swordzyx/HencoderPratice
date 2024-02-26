@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import com.hencoder.Utils;
 import com.hencoder.hencoderpratice.R;
-import com.hencoder.praticedraw6.Utils;
 
 
 public class Sample05MultiProperties extends ConstraintLayout {
